@@ -1,38 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Passo a Passo para Executar o Projeto
+Este arquivo contém as instruções necessárias para executar o projeto clonado do repositório do GitHub utilizando Next.js. Siga as etapas abaixo para configurar e executar o projeto com sucesso.
 
-## Getting Started
+# Pré-requisitos
+Certifique-se de ter os seguintes requisitos instalados em sua máquina:
 
-First, run the development server:
+Um codificador de sua preferência (por exemplo, Visual Studio Code, Sublime Text, Atom)
+Node.js (versão recomendada: 12.x ou superior)
+npm (gerenciador de pacotes do Node.js)
+Git (para clonar o repositório)
 
-```bash
+# Passo 1: Clonar o Repositório
+Clone o projeto do repositório Git para o diretório de sua escolha usando o seguinte comando:
+
+
+git clone https://github.com/fernandovalenca/frontend-upload-csv.git
+
+# Passo 2: Configurar o Arquivo .env
+Após clonar o projeto, navegue até a pasta raiz do projeto no seu codificador preferido. Em seguida, siga as etapas abaixo:
+
+Crie um arquivo chamado .env.local no diretório raiz do projeto.
+
+Abra o arquivo .env.local no seu codificador e adicione a seguinte linha:
+
+NEXT_PUBLIC_API_BASE_URL="http://localhost:3333"
+Certifique-se de salvar o arquivo após adicionar a linha acima.
+
+# Passo 3: Instalar Dependências
+No terminal, navegue até a pasta raiz do projeto e execute o seguinte comando para instalar as dependências necessárias:
+
+Esse comando irá baixar e instalar todas as dependências listadas no arquivo package.json.
+
+# Passo 4: Executar o Projeto
+Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar o projeto:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Isso irá iniciar o servidor de desenvolvimento e executar o projeto. Verifique o terminal para visualizar qualquer mensagem de log ou erro.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Após a execução bem-sucedida, você poderá acessar o projeto em http://localhost:3000 (ou outra porta especificada, se for diferente).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Agora você pode explorar e utilizar o projeto clonado!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Conclusão
+Ao seguir essas etapas, você será capaz de configurar e executar o projeto clonado do GitHub usando Next.js. Certifique-se de preencher corretamente o arquivo .env.local com a variável NEXT_PUBLIC_API_BASE_URL definida como http://localhost:3333. Em caso de dúvidas ou problemas, consulte a documentação do projeto ou entre em contato com o desenvolvedor responsável.
